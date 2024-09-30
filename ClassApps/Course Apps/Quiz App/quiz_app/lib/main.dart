@@ -93,7 +93,7 @@ class _QuizAppState extends State{
       body: Column(
         children: [
           const SizedBox(
-            height: 60,
+            height: 70,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -111,10 +111,10 @@ class _QuizAppState extends State{
             ],
           ),
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           SizedBox(
-            height: 100,
+            height: 80,
             width: 400,
             child: Text(
               allQuestions[currentQuestionIndex]["question"],
@@ -147,7 +147,7 @@ class _QuizAppState extends State{
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           SizedBox(
             width: 350,
@@ -271,10 +271,10 @@ class _QuizAppState extends State{
               ],
             ),
             const SizedBox(
-              height: 50,
+              height: 30,
             ),
             const Text(
-              "Congratulations", 
+              "Congratulations !!", 
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w700,
@@ -282,7 +282,7 @@ class _QuizAppState extends State{
               ),
             ),
             const SizedBox(
-              height: 20,
+              height: 5,
             ),
             Text(
               "Score : $count / ${allQuestions.length}",
@@ -292,33 +292,29 @@ class _QuizAppState extends State{
                 color: Colors.amber,
               ),
             ),
-            SizedBox(
-              height: 100,
-              child: Center(
-                child: FloatingActionButton(
-                  onPressed: (){
-                    if(changeScreen == false){
+            const SizedBox(
+              height: 30,
+            ),
+            ElevatedButton(
+              style: const ButtonStyle(
+                backgroundColor: WidgetStatePropertyAll(Color.fromARGB(255, 167, 209, 244)),
+              ),
+              onPressed: (){
+                if(changeScreen == false){
                       changeScreen = true;
                     }
                     selectedAnswer = -1;
                     currentQuestionIndex = 0;
                     count = 0;
                     setState(() {});
-                  },
-                  backgroundColor: Colors.blue,
-                  child: const Text(
-                    "Restart", 
-                    style: TextStyle(
-                      color: Colors.orange,
-                    ),
-                    ),
-                  // child: const Icon(
-                  //   Icons.refresh, 
-                  //   size: 40,
-                  //   color:Colors.orange,
-                  // ),
-                  
-                 ),
+              },
+              
+              child: const Text(
+                "Reset",
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.black,
+                ),
               ),
             ),
           ],
