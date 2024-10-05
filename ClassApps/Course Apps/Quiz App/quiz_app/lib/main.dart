@@ -82,7 +82,7 @@ class _QuizAppState extends State{
         title: const Text(
         "Quiz App", 
          style: TextStyle(
-          color: Colors.orange,
+          color: Colors.white,
           fontSize: 32,
           fontWeight:FontWeight.w900,
         ),
@@ -91,6 +91,8 @@ class _QuizAppState extends State{
         backgroundColor: Colors.blue,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const SizedBox(
             height: 70,
@@ -253,7 +255,7 @@ class _QuizAppState extends State{
              style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.w900,
-              color: Colors.orange,
+              color: Colors.white,
             ),
             ),
           centerTitle: true,
