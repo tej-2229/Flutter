@@ -382,11 +382,11 @@ class _UI6 extends State{
             Padding(
                 padding: const EdgeInsets.only(left:22, top: 15),
                 child: Text(
-                  "Popular Destinations",
-                  style:GoogleFonts.lato(
-                    textStyle: const TextStyle(color: Color.fromRGBO(0, 0, 0, 1), fontFamily: 'Inter'),
-                    fontSize: 21,
-                    fontWeight: FontWeight.w800,
+                  "Gallery",
+                  style:GoogleFonts.inter(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    color: const Color.fromRGBO(0, 0, 0, 1),
                   ),
                 ),
               ),
@@ -395,11 +395,11 @@ class _UI6 extends State{
                 child: Row(
                   children: [
                     Text(
-                      "Sorted by Higher rating",
-                      style:GoogleFonts.lato(
-                        textStyle: const TextStyle(color: Color.fromRGBO(179, 182, 187, 1), fontFamily: 'Inter'),
-                        fontSize: 14,
+                      "Sorted by recent photos",
+                      style:GoogleFonts.inter(
+                        fontSize: 12,
                         fontWeight: FontWeight.w500,
+                        color: const Color.fromRGBO(179, 182, 187, 1),
                       ),
                     ),
                     const SizedBox(
@@ -514,9 +514,9 @@ class _UI6 extends State{
               ),
             Container(
               padding: const EdgeInsets.only(left: 22,),
-              margin: const EdgeInsets.only(top: 35),
+              margin: const EdgeInsets.only(top: 37),
               width: 410,
-              height: 81,
+              height: 80,
               decoration: BoxDecoration(
                 border: Border.all(color: const Color.fromRGBO(138, 150, 172, 0.49), width: 1.5),
               ),
